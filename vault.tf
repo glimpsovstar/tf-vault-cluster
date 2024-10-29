@@ -1,5 +1,5 @@
 resource "hcp_vault_cluster" "djoo_hcp_vault_demo_vault" {
-  hvn_id     = data.terraform_remote_state.hcp_vault_demo_hvn.outputs.hvn_id
+  hvn_id     = data.terraform_remote_state.hcp_vault_demo_hvn.outputs.hvn-id
   cluster_id = var.cluster_id
   tier       = var.tier
   public_endpoint = true
