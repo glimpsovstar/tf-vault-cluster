@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_vpc" "peer" {
-  cidr_block = "172.31.0.0/16"
+  cidr_block = "172.27.16.0/20"
 }
 
 data "aws_arn" "peer" {

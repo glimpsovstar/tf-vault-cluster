@@ -1,25 +1,25 @@
 variable "hvn_id" {
   description = "The ID of the HCP HVN."
   type        = string
-  default     = "learn-hcp-vault-hvn"
+  default     = "djoo-hcp-vault-demo-hvn"
 }
 
 variable "cluster_id" {
   description = "The ID of the HCP Vault cluster."
   type        = string
-  default     = "learn-hcp-vault-cluster"
+  default     = "djoo-hcp-vault-demo-cluster"
 }
 
 variable "peering_id" {
   description = "The ID of the HCP peering connection."
   type        = string
-  default     = "learn-peering"
+  default     = "djoo-hcp-vault-demo-peering"
 }
 
 variable "route_id" {
   description = "The ID of the HCP HVN route."
   type        = string
-  default     = "learn-hvn-route"
+  default     = "djoo-hcp-vault-demo-route"
 }
 
 variable "region" {
@@ -37,5 +37,5 @@ variable "cloud_provider" {
 variable "tier" {
   description = "Tier of the HCP Vault cluster. Valid options for tiers."
   type        = string
-  default     = "dev"
+  default     = "starter_small"
 }
